@@ -6,7 +6,7 @@ var humidityEl = $("#humidity");
 var windspeedEl = $("#windSpeed");
 var uvIndexEl = $("#uvIndex");
 
-var apiKey = "995e326b80d10383e267b0aff15bf8af";
+var apiKey = "ab666ba57468937b08060e1bacb28d8d";
 var cityName;
 
 var todayDate = moment().format("L");
@@ -63,7 +63,7 @@ $("#savedCity").on("click", "button", function () {
 });
 
 function makeWeatherRequest(cityName) {
-  // Get weather values
+  
   var queryUrl =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     cityName +
